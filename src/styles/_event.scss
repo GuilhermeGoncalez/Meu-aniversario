@@ -1,0 +1,44 @@
+@use 'variables';
+
+.event {
+    padding: 80px 0;
+    
+    &--bebidas {
+        background-image: linear-gradient(variables.$purple, variables.$blue);
+    }
+    &--buffet {
+        background-image: linear-gradient(variables.$blue, variables.$pink);
+    }
+    &--pista {
+        background-image: linear-gradient(variables.$pink, variables.$yellow);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container {
+        display: flex; 
+        gap: 40px;
+    }
+
+    &__image {
+        width: 320px;
+        height: 270px;
+    }
+
+    &__detail {
+
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description {
+            line-height: 22px;
+        }
+    }
+}
